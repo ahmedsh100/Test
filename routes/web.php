@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::controller(ThemeController::class)->group(function () {
-    Route::get('/', 'index')->name('home.index');
+    // Route::get('/', 'index')->name('home.index');
     Route::get('/about', 'about')->name('home.about');
+    Route::get('/services', 'services')->name('home.services');
+    Route::get('/contact', 'contact')->name('home.contact');
 });
