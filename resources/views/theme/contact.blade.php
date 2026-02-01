@@ -1,6 +1,8 @@
 @extends("theme.master")
 
-@section("content")
+ @section("hero-title","My Content")
+
+ @section("content")
 		<!-- Start Contact Form -->
 		<div class="untree_co-section">
       <div class="container">

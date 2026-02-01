@@ -1,5 +1,8 @@
 @extends("theme.master")
 
+ @section("hero-title","My Services")
+
+
 @section("content")
 
 		<!-- Start Why Choose Us Section -->

@@ -1,5 +1,7 @@
  @extends("theme.master")
 
+ @section("hero-title","My About Us")
+
  @section("content")
 	<!-- Start Why Choose Us Section -->
 		<div class="why-choose-section">
