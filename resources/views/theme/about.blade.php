@@ -1,3 +1,9 @@
+ @extends("theme.master")
+
+ @section("content")
+Hello From About Page
+ @endsection
+
 <!-- /*
 * Bootstrap 5
 * Template Name: Furni
@@ -5,7 +11,7 @@
 * Template URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
-<!doctype html>
+{{-- <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -425,4 +431,4 @@
 		<script src="{{asset('assets')}}/js/custom.js"></script>
 	</body>
 
-</html>
+</html> --}}
