@@ -23,4 +23,5 @@ Route::controller(ThemeController::class)->group(function () {
     Route::get('/about', 'about')->name('home.about');
     Route::get('/services', 'services')->name('home.services');
     Route::get('/contact', 'contact')->name('home.contact');
+    Route::post('/store', 'store')->name('home.store');
 });
