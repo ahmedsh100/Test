@@ -1,6 +1,7 @@
 @extends("theme.master")
 
  @section("hero-title","My Services")
+ @section("Services-active","active")
 
 
 @section("content")

@@ -1,6 +1,7 @@
 @extends("theme.master")
 
- @section("hero-title","My Content")
+@section("hero-title","My Content")
+@section("contact-active","active")
 
  @section("content")
 		<!-- Start Contact Form -->
