@@ -21,8 +21,8 @@ class ThemeController extends Controller
         $valedated_data = $request->validate([
             "first_name"=>"required|string|max:8",
             "last_name"=>"required|string|max:8",
-            "email"=>"",
-            "message"=>"",
+            "email"=>"required|email|max:25",
+            "message"=>"required|max:80",
         ]);
     }
 }
