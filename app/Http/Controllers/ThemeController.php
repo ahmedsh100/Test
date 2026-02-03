@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreContactRequest;
 use Illuminate\Http\Request;
 
 class ThemeController extends Controller
@@ -16,13 +17,16 @@ class ThemeController extends Controller
         return view('theme.contact');
     }
 
-    public function store(Request $request){
+    public function store(StoreContactRequest $request){
+        $valedated_data = $request->validate();
+
+        
         // dd($request->all());
-        $valedated_data = $request->validate([
-            "first_name"=>"required|string|max:8",
-            "last_name"=>"required|string|max:8",
-            "email"=>"required|email|max:25",
-            "message"=>"required|max:80",
-        ]);
+        // $valedated_data = $request->validate([
+        //     "first_name"=>"required|string|max:8",
+        //     "last_name"=>"required|string|max:8",
+        //     "email"=>"required|email|max:25",
+        //     "message"=>"required|max:80",
+        // ]);
     }
 }
