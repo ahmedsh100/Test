@@ -17,6 +17,12 @@ class ThemeController extends Controller
     }
 
     public function store(Request $request){
-        dd($request->all());
+        // dd($request->all());
+        $valedated_data = $request->validate([
+            "first_name"=>"required|string|max:8",
+            "last_name"=>"required|string|max:8",
+            "email"=>"",
+            "message"=>"",
+        ]);
     }
 }

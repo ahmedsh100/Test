@@ -59,7 +59,6 @@
               <form action="{{ route("home.store") }}" method="POST">
                 @method("POST")
                 @csrf
-
                 <div class="row">
                   <div class="col-6">
                     <div class="form-group">
