@@ -16,9 +16,18 @@ class ThemeController extends Controller
     }
     public function contact(){
 
-        // //Create
+        //!Create
         // $contact = Contact::find(2);
         // $contact->create([
+        //     "first_name"=>"Mohamed",
+        //     "last_name"=>"ahmed",
+        //     "email"=>"mohamed@yaho.com",
+        //     "message"=>"message1111111111",
+        // ]);
+
+        //!Update
+        // $contact = Contact::find(2);
+        // $contact->update([
         //     "first_name"=>"Mohamed",
         //     "last_name"=>"ahmed",
         //     "email"=>"mohamed@yaho.com",
