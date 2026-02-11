@@ -59,6 +59,13 @@
               <form action="{{ route("home.store") }}" method="POST">
                 @method("POST")
                 @csrf
+
+                @if (session('status'))
+                <div style="border: 1px solid greenyellow">
+                    {{ session('status') }}
+                </div>
+                @endif
+
                 @error('first_name','last_name','email','message')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

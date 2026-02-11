@@ -53,5 +53,8 @@ class ThemeController extends Controller
         //     "email"=>"required|email|max:25",
         //     "message"=>"required|max:80",
         // ]);
+
+        Contact::create($valedated_data);
+        return back()->with("Status","Sussusfully!");
     }
 }
