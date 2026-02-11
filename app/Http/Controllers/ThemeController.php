@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreContactRequest;
+use App\Models\Category;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 
@@ -38,12 +39,12 @@ class ThemeController extends Controller
         // $contact = Contact::find(2);
         // $contact ->delete();
 
-
-        return view('theme.contact');
+        $category = Category::all();
+        return view('theme.contact',compact('category'));
     }
 
     public function store(StoreContactRequest $request){
-        $valedated_data = $request->validate();
+        $valedated_data = $request->validated();
 
 
         // dd($request->all());

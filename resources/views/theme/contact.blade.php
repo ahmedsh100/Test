@@ -56,6 +56,7 @@
                 </div>
               </div>
 
+              @dump($category)
               <form action="{{ route("home.store") }}" method="POST">
                 @method("POST")
                 @csrf
