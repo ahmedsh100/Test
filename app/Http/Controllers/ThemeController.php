@@ -34,6 +34,11 @@ class ThemeController extends Controller
         //     "message"=>"message1111111111",
         // ]);
 
+        //!Delete
+        // $contact = Contact::find(2);
+        // $contact ->delete();
+
+
         return view('theme.contact');
     }
 
