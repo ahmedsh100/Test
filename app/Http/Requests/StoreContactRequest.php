@@ -26,6 +26,7 @@ class StoreContactRequest extends FormRequest
             "last_name"=>"required|string|max:8",
             "email"=>"required|email|max:25",
             "message"=>"required|max:80",
+            "category_id"=>"required|exists:categories,id",
         ];
     }
     public function messages()
